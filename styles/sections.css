@@ -1,0 +1,73 @@
+/* header */
+#header {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#headerImage {
+    width: 35%;
+}
+
+#headerName {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25em;
+    font-weight: 900;
+    color: #111518;
+}
+
+#headerBlurb {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #232C33;
+}
+
+/* about */
+#about {
+    text-align: center;
+    padding: 5%;
+    width: 50%;
+    border-style: solid;
+    border-color: #232C33;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+}
+
+#aboutBlurb {
+    width: 60%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+/* activities */
+#activities {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: justify;
+}
+
+#activitiesHeader {
+    text-align: center;
+}
+
+#activitiesFlexBox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#activitiesSections {
+    flex-grow: 1;
+}
+
+.activitiesInfo {
+    flex-grow: 2;
+}

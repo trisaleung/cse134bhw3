@@ -1,257 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <title>trisa leung</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <script>
-            window.onload = function() {
-                var canvas = document.getElementById("placeholderImage");
-                var ctx = canvas.getContext("2d");
-                ctx.fillStyle = "green";
-                ctx.fillRect(80, 80, 80, 80);
-            }
-        </script>
-        <style></style>
+        <title>trisa leung 🍓</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "./styles/navbar.css">
+        <link rel = "stylesheet" href = "./styles/sections.css">
+        <link rel = "stylesheet" href = "./styles/general.css">
+        <link rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Cormorant+Garamond">
+        <link rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Roboto+Serif">
+        <link rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Source+Sans+Pro">
     </head>
     <body>
         <main>
-            <nav>
+            <header id = "header">
+                <img src = "./media/websitepic.png" id = "headerImage">
+                <h1 id = "headerName">Trisa Leung</h1>
+                <p id = "headerBlurb">Hello! I'm a fourth year computer science undergraduate from UC San Diego, and an incoming SWE @ Microsoft on the Commerce + Ecosystems team later this year.</p>
+            </header>
+
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#activities">activities</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#technologies">technologies</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#activities">ACTIVITIES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#technologies">TECHNOLOGIES</a></li> 
                 </ul>
             </nav>
 
-            <header>
-                <picture>
-                    <source srcset="earlgrey_small.png 300w, earlgrey_med.png 500w"
-                        sizes="(min-width: 700px) 700px,
-                        (min-width: 768px) 400px,
-                        100vw">
-                    <img src="earlgrey_med.png" alt="Dog">
-                </picture>
-                <h1>Trisa Leung</h1>
-                <p><i>she/her</i></p>
-                <svg width="50" height="50">
-                    <circle cx="50" cy="50" r="40" fill="pink" />
-                </svg>
+            <section id = "about">
+                <h2 id= "aboutHeader" class = "sectionHeader">about</h2>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="3">cats!</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <pre>
-                                    ○       ♪♪
-                                    /\__\__/\ ♪
-                                  /                  \
-                                 ( ﾐ  ⌒ ● ⌒ ﾐ)  /
-                                </pre>
-                            </td>
-            
-                            <td>
-                                <figure>
-                                    <figcaption>cat meowing here:</figcaption>
-                                    <audio controls src="catmeow.mp3">
-                                        <a href="catmeow.mp3">audio</a>
-                                    </audio>
-                                </figure>
-                            </td>
-            
-                            <td>
-                                <video controls width="250">
-                                    <source src="tempvid.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p class = "sectionText" id = "aboutBlurb">fourth year computer science undergraduate at University of California, San Diego; incoming SWE at Microsoft; amateur painter & full time pomeranian haver.</p>
 
-            </header>
-
-            <hr>
-            <section id="about">
-                <h2>about</h2>
-                
-                <p><b>fourth year computer science undergraduate at University of California, San Diego; incoming SWE at Microsoft</b></p>
+                <a href="https://docs.google.com/document/d/1Jilq8FMVckF868_1rVjUI4qWPIVDgKyE7-bp95ZMXzo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class = "sectionLink" id = "aboutResumeLink">find my resume here</a>
             </section>
 
-            <hr>
-            <section id="activities">
-                <h2>activities</h2>
+            <section id = "activities">
+                <h2 id = "activitiesHeader" class = "sectionHeader">activities</h2>
 
-                <h3>ACM</h3>
-                
-                <div>
-                    <h4>year one</h4>
-                    <h5>communications director</h5>
-                    <p>in charge of collaboration events between ACM and other engineering student organizations on campus. events included: </p>
-                    
-                    <ol>
-                        <li>workshop on web development with <strong>Society for Women Engineers (SWE)</strong></li>
-                        <li>social events with <strong>IEEE</strong></li>
-                        <li>intern panel with <strong>HKN</strong></li>
-                    </ol>
-                </div>
+                <container id = "activitiesFlexBox">
+                    <div class = "activitiesSections">
+                        <h3>ACM</h3>
+                        <h4>year one</h4>
+                        <h4>year two</h4>
+                        <h4>year three</h4>
+                        <h4>year four</h4>
+                    </div>
+                    <div class = "activitiesInfo">
+                        <h5>communications director</h5>
+                        <p>in charge of collaboration events between ACM and other engineering student organizations on campus. events included:</p>
 
-                <br>
-                <div>
-                    <h4>year two</h4>
-                    <h5>vice president external</h5>
-                    <p>lead marketing and sponsorship team in the second year of UCSD's ACM chapter. opened TikTok account, began weekly social media events on Instagram, expanded content creation into videos and oversaw events with Mapbox and more.</p>
-
-                    <h5>acm hack: event lead</h5>
-                    <p>hosted <em>node.js</em> workshop for acm hack's 2020 hack school.</p>
-                    <code>
-                        alert("Why were the two people who knew nothing about the theme (Pokemon) put in charge of a workshop together?");
-                    </code>
-
-                    <canvas id="placeholderImage">
-                        browser does not support canvas tag.
-                    </canvas>
-                </div>
-
-                <br>
-                <div>
-                    <h4>year three</h4>
-                    <h5>projects lead</h5>
-                    <p>led projects program for both general and hack projects (separated by skill level, with a focus on hack projects that were more beginner-focused). guided teams and mentors to create a final project, typically a web application using the MERN stack, to be presented at the end of the quarter at the project's showcase.</p>
-
-                    <h5>acm hack: event lead</h5>
-                    <p>hosted <em>html/css</em> workshop for acm hack's 2021 hack school.</p>
-                </div>
-
-                <br>
-                <div>
-                    <h4>year four</h4>
-                    <h5>member at large</h5>
-                    <p>moral support. fill in later.</p>
-                </div>
+                        <ol>
+                            <li>workshop on web development with <strong>Society for Women Engineers (SWE)</strong></li>
+                            <li>social events with <strong>IEEE</strong></li>
+                            <li>intern panel with <strong>HKN</strong></li>
+                        </ol>
+                    </div>
+                </container>
             </section>
-
-            <hr>
-            <section id="projects">
-                <h2>projects</h2>
-
-                <h3>personal</h3>
-                <h4>red bean press</h4>
-                <p>web application using MERN stack to showcase issues for a literary zine published from 2019-2020.</p>
-
-                <br>
-                <h3>internship</h3>
-                <h4>Microsoft</h4>
-                <p>improved response times of subscriber database for Microsoft Azure accounts by 99%. took advantage of <span>Cosmos DB</span> data consistency and built-in change feed processors to keep new databases updated in the expansion necessary.</p>
-
-                <aside>
-                    backfill of already existing information in these databases not implemented, but left documentation on multiple plans on how to do so using both offline and online migration. offline migration is heavily discouraged due to the downtime necessary.
-                </aside>
-
-                <details>
-                    <summary>
-                        Microsoft Building 83 is across from the Commons of the Redmond campus. 
-                        <br>It is about a 15 minute walk away, meaning that I have had to do an
-                        <br>8 minute run to catch the bus on multiple occasions.
-                        <br>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.823613746792!2d-122.13574118452486!3d47.64899437918748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d68d3341abf%3A0x6e888270e2b7d34b!2sMicrosoft%20Building%2083!5e0!3m2!1sen!2sus!4v1674950152694!5m2!1sen!2sus" width="150" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </summary>
-                    i used to work here!
-                </details>
-
-            </section>
-
-            <hr>
-            <section id="technologies">
-                <h2>technologies</h2>
-                <h3>Cosmos DB</h3>
-                <p>some information about Cosmos DB.</p>
-                <h3>C#</h3>
-                <p>something about C#.</p>
-
-                <table>
-                    <caption>technologies used, in table form as a test</caption>
-                    <colgroup>
-                        <col span="1" class="techname">
-                        <col span="1" class="info">
-                        <col span="1" class="use">
-                    </colgroup>
-                    <thead>
-                        <tr><th colspan="3">skills</th></tr>
-                    </thead>
-                    <tr>
-                        <td>Cosmos DB</td>
-                        <td>some information about Cosmos DB.</td>
-                        <td>used at Microsoft internship</td>
-                    </tr>
-                    <tr>
-                        <td>C#</td>
-                        <td>something about C#.</td>
-                        <td>used at Microsoft internship</td>
-                    </tr>
-                </table>
-
-            </section>
-
-            <hr>
-            <footer>
-                <h2>contact me</h2>
-
-                <template>
-                    <!-- for contact popup at a later stage -->
-                    <a href="https://www.linkedin.com/in/trisa-leung-58384a183/">linkedin</a>
-                    <a href="https://github.com/trisaleung">github</a>
-                </template>
-
-                <form action="submit" method="get">
-                    <fieldset>
-                        <legend>submitting a message</legend>
-                        <fieldset>
-                            <label for="name">Enter your name: </label>
-                            <input type="text" name="name" id="name" required>
-                        </fieldset>
-                        <fieldset>
-                            <label for="email">Enter your email: </label>
-                            <input type="text" name="email" id="email" required>
-                        </fieldset>
-                        <fieldset>
-                            <label for="type">Type of message: </label>
-                            <select name="type" id="type">
-                                <option value="">Please choose an option</option>
-                                <optgroup label="work">
-                                    <option value="recruitment">recruiter message</option>
-                                    <option value="internship">questions about internship</option>
-                                </optgroup>
-                                <optgroup label="community">
-                                    <option value="questionsacm">acm questions</option>
-                                </optgroup>
-                                <option value="other">other</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="year">Favorite ACM year: </label>
-                            <input list="acm-year" id="year">
-                            <datalist id="acm-year">
-                                <option value="one">one</option>
-                                <option value="two">two</option>
-                                <option value="three">three</option>
-                                <option value="four">four</option>
-                            </datalist>
-                        </fieldset>
-                        <fieldset>
-                            <label for="message">Enter your message here: </label>
-                            <textarea name="message" rows="5" cols="100" placeholder="insert your message here." id="message"></textarea>
-                        </fieldset>
-                        <button type="submit">submit message!</button>
-                    </fieldset>
-                </form>
-
-            </footer>
         </main>
     </body>
 </html>

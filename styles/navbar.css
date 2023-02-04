@@ -1,0 +1,53 @@
+#navbar {
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1em;
+    z-index: 100;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #F3F5F7;
+    position: sticky;
+    top: 0;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 3%;
+    padding-left: 2%;
+    text-align: justify;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #284453;
+    padding: 1em;
+}
+
+#navbar a:hover {
+    color: #3C677C;
+    font-weight: bold;
+    background-color: #C8DBE4;
+    transition-property: font-weight, color, background-color;
+    transition-duration: 1s;
+}
+
+#navbar a:active {
+    color: #C8DBE4;
+    background-color: #3C677C;
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    color: #284453;
+    text-decoration: none;
+}
+
+#navbar a:link {
+    color: #284453;
+    text-decoration: none;
+}
+
+#test {
+    height: 200vh;
+}

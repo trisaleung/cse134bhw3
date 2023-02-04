@@ -1,0 +1,36 @@
+/* general styling */
+.sectionHeader {
+    font-family: 'Roboto Serif', serif;
+    font-size: 2em;
+    color: #111518;
+}
+
+.sectionText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+}
+
+.sectionLink {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    color: #3C677C;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.sectionLink:hover {
+    color: #F1F6F7;
+    background-color: #3C677C;
+    font-weight: bold;
+    transition-property: color, background-color, font-weight;
+    transition-duration: 1s;
+}
+
+.sectionLink:active {
+    color: #3C677C;
+    background-color: #F1F6F7;
+} 
+
+.sectionLink a:visited {
+    color: #497D97;
+}
