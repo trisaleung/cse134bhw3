@@ -1,8 +1,19 @@
 /* general styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: 100%;
+}
+
 .sectionHeader {
     font-family: 'Roboto Serif', serif;
     font-size: 2em;
     color: #111518;
+    margin-top: 10%;
+    text-align: center;
 }
 
 .sectionText {
@@ -33,4 +44,13 @@
 
 .sectionLink a:visited {
     color: #497D97;
+}
+
+.cardsFlexBoxRow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cardsFlexBoxColumn {
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -9,6 +9,7 @@
     background-color: #F3F5F7;
     position: sticky;
     top: 0;
+    width: 100%;
 }
 
 #navbar li {
@@ -48,6 +49,24 @@
     text-decoration: none;
 }
 
-#test {
-    height: 200vh;
+#mobileNavbarIcon {
+    width: 2em;
+    padding: 2%;
+    display: none;
+}
+
+#mobileNavbarTitle {
+    display: none
+}
+
+@media only screen and (max-width: 768px) {
+    #mobileNavbarIcon {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline;
+    }
+
+    #navbar ul {
+        display: none;
+    }
 }
