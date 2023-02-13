@@ -71,6 +71,28 @@ main {
 }
 
 /* navbar */
+@keyframes navbarBackground {
+    0% {
+        background-color: #F3F5F7;
+    }
+
+    25% {
+        background-color: #DCDFE2;
+    }
+
+    50% {
+        background-color: #B0B8C1;
+    }
+
+    75% {
+        background-color: #DCDFE2;
+    }
+
+    100% {
+        background-color: #F3F5F7;
+    }
+}
+
 #navbar {
     text-align: center;
     font-family: var(--header-font);
@@ -79,7 +101,11 @@ main {
     width: 100%;
     padding-top: 1%;
     padding-bottom: 1%;
+    animation-name: navbarBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
     background-color: #F3F5F7;
+    border: 1px solid #B0B8C1;
     position: sticky;
     top: 0;
     width: 100%;
@@ -419,6 +445,7 @@ main {
         margin-left: auto;
         margin-right: auto;
         display: inline;
+        transform: scale(1.5, 1.2);
     }
 
     #navbar ul {
@@ -490,6 +517,10 @@ main {
 
     .technologiesImage {
         width: 100%;
+    }
+
+    .contactImage {
+        transform: translate(0, 30%);
     }
 }
 
