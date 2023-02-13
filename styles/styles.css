@@ -413,7 +413,8 @@ main {
     scroll-margin-top: 7em;
 }
 
-@media only screen and (max-width: 768px) {
+/* responsive design: small screen */
+@media only screen and (max-width: 668px) {
     #mobileNavbarIcon {
         margin-left: auto;
         margin-right: auto;
@@ -489,5 +490,63 @@ main {
 
     .technologiesImage {
         width: 100%;
+    }
+}
+
+/* responsive design: restrictive screen */
+@media only screen and (max-width: 992px) and (min-width: 669px) {
+    #navbar li {
+        padding: 1%;
+    }
+
+    #headerImage {
+        width: 25em;
+        margin-top: 5%;
+    }
+
+    #about, #activities, #projects, #technologies, #navbar {
+        margin-bottom: 20em;
+    }
+
+    #headerBlurb {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    #aboutBlurb {
+        width: 60%;
+    }
+
+    .technologiesSection {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .technologiesImage {
+        width: 100%;
+    }
+}
+
+/* responsive design: desktop screens */
+@media only screen and (min-width: 1500px) {
+    #navbar li {
+        font-size: 1.5em;
+        padding: 1%;
+    }
+
+    #about, #activities, #projects, #technologies {
+        margin-top: 20%;
+    }
+
+    #headerName {
+        font-size: 3.5em;
+    }
+
+    .sectionHeader {
+        font-size: 3em;
+    }
+
+    h3, h4 {
+        font-size: 2em;
     }
 }
