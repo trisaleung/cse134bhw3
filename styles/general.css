@@ -1,3 +1,16 @@
+:root {
+    --main-text-color: #111518;
+    --link-color: #3C677C;
+    --link-visited-color: #497D97;
+    --offwhite-hover-color: #F1F6F7;
+    --footer-hover-color: #B5B2C2;
+    --footer-color: #DADFF7;
+    --navbar-color: #C8DBE4;
+
+    --header-font: 'Roboto Serif', serif;
+    --text-font: 'Source Sans Pro', sans-serif;
+}
+
 /* general styling */
 html, body {
     height: 100%;
@@ -9,41 +22,41 @@ main {
 }
 
 .sectionHeader {
-    font-family: 'Roboto Serif', serif;
+    font-family: var(--header-font);
     font-size: 2em;
-    color: #111518;
+    color: var(--main-text-color);
     margin-top: 10%;
     text-align: center;
 }
 
 .sectionText {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--text-font);
     font-size: 1em;
 }
 
 .sectionLink {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--text-font);
     font-size: 1em;
-    color: #3C677C;
+    color: var(--link-color);
     text-decoration: none;
     padding: 1em;
 }
 
 .sectionLink:hover {
-    color: #F1F6F7;
-    background-color: #3C677C;
+    color: var(--offwhite-hover-color);
+    background-color: var(--link-color);
     font-weight: bold;
     transition-property: color, background-color, font-weight;
     transition-duration: 1s;
 }
 
 .sectionLink:active {
-    color: #3C677C;
-    background-color: #F1F6F7;
+    color: var(--link-color);
+    background-color: var(--offwhite-hover-color);
 } 
 
 .sectionLink a:visited {
-    color: #497D97;
+    color: var(--link-visited-color);
 }
 
 .cardsFlexBoxRow {

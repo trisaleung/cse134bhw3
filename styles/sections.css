@@ -1,3 +1,137 @@
+/* custom variables for theme font and colors */
+:root {
+    --main-text-color: #111518;
+    --link-color: #3C677C;
+    --link-visited-color: #497D97;
+    --offwhite-hover-color: #F1F6F7;
+    --footer-hover-color: #B5B2C2;
+    --footer-color: #DADFF7;
+    --navbar-color: #C8DBE4;
+
+    --site-name-font: 'Cormorant Garamond', serif;
+    --header-font: 'Roboto Serif', serif;
+    --text-font: 'Source Sans Pro', sans-serif;
+}
+
+/* general styling */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: 100%;
+}
+
+.sectionHeader {
+    font-family: var(--header-font);
+    font-size: 2em;
+    color: var(--main-text-color);
+    margin-top: 10%;
+    text-align: center;
+}
+
+.sectionText {
+    font-family: var(--text-font);
+    font-size: 1em;
+}
+
+.sectionLink {
+    font-family: var(--text-font);
+    font-size: 1em;
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 1em;
+}
+
+.sectionLink:hover {
+    color: var(--offwhite-hover-color);
+    background-color: var(--link-color);
+    font-weight: bold;
+    transition-property: color, background-color, font-weight;
+    transition-duration: 1s;
+}
+
+.sectionLink:active {
+    color: var(--link-color);
+    background-color: var(--offwhite-hover-color);
+} 
+
+.sectionLink a:visited {
+    color: var(--link-visited-color);
+}
+
+.cardsFlexBoxRow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cardsFlexBoxColumn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* navbar */
+#navbar {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 1em;
+    z-index: 100;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #F3F5F7;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 3%;
+    padding-left: 2%;
+    text-align: justify;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #284453;
+    padding: 1em;
+}
+
+#navbar a:hover {
+    color: var(--link-color);
+    font-weight: bold;
+    background-color: var(--navbar-color);
+    transition-property: font-weight, color, background-color;
+    transition-duration: 1s;
+}
+
+#navbar a:active {
+    color: var(--navbar-color);
+    background-color: var(--link-color);
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    color: #284453;
+    text-decoration: none;
+}
+
+#navbar a:link {
+    color: #284453;
+    text-decoration: none;
+}
+
+#mobileNavbarIcon {
+    width: 2em;
+    padding: 2%;
+    display: none;
+}
+
+#mobileNavbarTitle {
+    display: none
+}
+
 /* header */
 #header {
     text-align: center;
@@ -10,20 +144,20 @@
 }
 
 #headerName {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--site-name-font);
     font-size: 2.25em;
     font-weight: 900;
-    color: #111518;
+    color: var(--main-text-color);
 }
 
 #headerBlurb {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--text-font);
     font-size: 1em;
     text-align: justify;
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    color: #232C33;
+    color: var(--main-text-color);
 }
 
 /* about */
@@ -63,15 +197,15 @@
 #activitiesSections {
     flex-grow: 1;
     width: 30%;
-    font-family: 'Roboto Serif', serif;
-    color: #111518;
+    font-family: var(--header-font);
+    color: var(--main-text-color);
 }
 
 .activitiesInfo {
     flex-grow: 2;
     width: 70%;
-    font-family: 'Source Sans Pro', sans-serif;
-    border-left: 1px solid #111518;
+    font-family: var(--text-font);
+    border-left: 1px solid var(--main-text-color);
 }
 
 #activitiesACM {
@@ -82,7 +216,7 @@
 
 .activitiesTitle {
     font-family: 'Roboto Serif', serif;
-    color: #111518;
+    color: var(--main-text-color);
     font-size: 1.3em;
 }
 
@@ -92,38 +226,38 @@
 }
 
 .activitiesYear:hover {
-    background-color: #3C677C;
-    color: #F1F6F7;
+    background-color: var(--link-color);
+    color: var(--offwhite-hover-color);
     transition-property: background-color, color;
     transition-duration: 1s;
 }
 
 .activitiesYear:active {
-    background-color: #F1F6F7;
+    background-color: var(--offwhite-hover-color);
     transition-property: background-color;
     transition-duration: 1s;
 }
 
 .yearLink:link {
     text-decoration: none;
-    color: #3C677C;
+    color: var(--link-color);
     width: 100%;
 }
 
 .yearLink:hover {
-    color: #F1F6F7;
+    color: var(--offwhite-hover-color);
     transition-property: color;
     transition-duration: 1s;
 }
 
 .yearLink:active {
-    color: #3C677C;
+    color: var(--link-color);
     transition-property: color;
     transition-duration: 1s;
 }
 
 .yearLink:visited {
-    color: #3C677C;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -143,8 +277,8 @@
 #projectsSections {
     flex-grow: 1;
     width: 30%;
-    font-family: 'Roboto Serif', serif;
-    color: #111518;
+    font-family: var(--header-font);
+    color: var(--main-text-color);
 }
 
 .projectType {
@@ -156,8 +290,8 @@
 .projectsInfo {
     flex-grow: 2;
     width: 70%;
-    font-family: 'Source Sans Pro', sans-serif;
-    border-left: 1px solid #111518;
+    font-family: var(--text-font);
+    border-left: 1px solid var(--main-text-color);
 }
 
 .projectName {
@@ -166,44 +300,44 @@
 }
 
 .projectName:hover {
-    background-color: #3C677C;
-    color: #F1F6F7;
+    background-color: var(--link-color);
+    color: var(--offwhite-hover-color);
     transition-property: background-color, color;
     transition-duration: 1s;
 }
 
 .projectName:active {
-    background-color: #F1F6F7;
+    background-color: var(--offwhite-hover-color);
     transition-property: background-color;
     transition-duration: 1s;
 }
 
 .projectsLink:link {
     text-decoration: none;
-    color: #3C677C;
+    color: var(--link-color);
     width: 100%;
 }
 
 .projectsLink:hover {
-    color: #F1F6F7;
+    color: var(--offwhite-hover-color);
     transition-property: color;
     transition-duration: 1s;
 }
 
 .projectsLink:active {
-    color: #3C677C;
+    color: var(--link-color);
     transition-property: color;
     transition-duration: 1s;
 }
 
 .projectsLink:visited {
-    color: #3C677C;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .projectTitle {
-    font-family: 'Roboto Serif', serif;
-    color: #111518;
+    font-family: var(--header-font);
+    color: var(--main-text-color);
     font-size: 1.3em;
 }
 
@@ -226,13 +360,13 @@
 }
 
 .technologiesName {
-    font-family: 'Roboto Serif', serif;
-    color: #111518;
+    font-family: var(--header-font);
+    color: var(--main-text-color);
     font-size: 1.3em;
 }
 
 .technologiesText p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--text-font);
 }
 
 .technologiesImage {
@@ -242,10 +376,10 @@
 
 /* contact */
 #footer {
-    background-color: #DADFF7;
+    background-color: var(--footer-color);
     text-align: center;
     height: 10em;
-    box-shadow: 0 50vh 0 50vh #DADFF7;
+    box-shadow: 0 50vh 0 50vh var(--footer-color);
 }
 
 #contact {
@@ -264,7 +398,7 @@
 }
 
 .contactImage:hover {
-    background-color: #B5B2C2;
+    background-color: var(--footer-hover-color);
     transition-property: background-color;
     transition-duration: 1s;
 }
@@ -280,6 +414,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #mobileNavbarIcon {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
     #headerImage {
         width: 25em;
         margin-top: 10%;
@@ -304,7 +448,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid #111518;
+        border-bottom: 1px solid var(--main-text-color);
     }
 
     #activitiesACM {
