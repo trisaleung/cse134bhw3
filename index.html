@@ -11,7 +11,14 @@
     <body>
         <main>
             <header id = "header">
-                <img src = "./media/websitepic.png" id = "headerImage" alt = "picture of person portfolio site is for">
+                <picture id = "headerImage">
+                    <source media = "(min-width: 1500px)" srcset = "./media/websitepic.png"/>
+                    <source media = "(max-width: 992px)" srcset = "./media/websitepic_med.png"/>
+                    <source media = "(max-width: 668px)" srcset = "./media/websitepic_small.png"/>
+
+                    <img src = "./media/websitepic.png" id = "headerImage" alt = "picture of person portfolio site is for">
+                </picture>
+
                 <h1 id = "headerName">Trisa Leung</h1>
                 <p id = "headerBlurb">Hello! I'm a fourth year computer science undergraduate from UC San Diego, and an incoming SWE @ Microsoft on the Commerce + Ecosystems team later this year.</p>
             </header>
@@ -122,7 +129,6 @@
                             <h3 class = "technologiesName">Cosmos DB</h3>
                             <p>Azure Cosmos DB is a fully managed NoSQL and relational database for modern app development. Used during 2022 summer Microsoft internship to decrease response times for subscriptions.</p>
                         </div>
-                        <img src = "media/temporary_azuredb_photo.png" class = "technologiesImage" alt = "diagram of Cosmos DB database locations">
                     </div>
 
                     <div class = "technologiesSection">
@@ -130,7 +136,6 @@
                             <h3 class = "technologiesName">C#</h3>
                             <p>C# is an object-oriented programming language. Used during 2022 summer Microsoft internship to create web applications, functions, and required traffic managers to route database access.</p>
                         </div>
-                        <img src = "media/temporary_csharp_photo.png" class = "technologiesImage" alt = "C# program in Visual Studio">
                     </div>
                 </div>
             </section>
